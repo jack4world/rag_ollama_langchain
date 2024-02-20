@@ -10,6 +10,7 @@ async def redirect_root_to_docs():
     return RedirectResponse("/docs")
 
 
+
 from rag_chroma_private import chain as rag_chroma_private_chain
 
 add_routes(app, rag_chroma_private_chain, path="/rag-chroma-private")
